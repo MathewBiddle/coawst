@@ -2,4 +2,4 @@
 
 This package contains all the input files for ROMS and SWAN configuration.
 
-It does not include the data files.
+the zip packages in `ROMS_INPUT_FILES` and `SWAN_INPUT_FILES` contain the input data files.
