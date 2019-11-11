@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/203386022.svg)](https://zenodo.org/badge/latestdoi/203386022)
+
 # coawst
 
 This package contains all the input files for ROMS and SWAN configuration.
