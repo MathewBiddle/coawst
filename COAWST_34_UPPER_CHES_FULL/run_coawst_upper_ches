@@ -1,0 +1,24 @@
+#!/bin/bash
+### Number of nodes
+#PBS -l nodes=4:ppn=4
+
+umask 0002
+
+#echo "this job is running on:"
+#cat $PBS_NODEFILE
+
+#NPROCS=`wc -l < $PBS_NODEFILE`
+
+#cd /peach/data0/jcwarner/Models/COAWST_regress
+# 9 processors is good
+mpirun -np 18 ./coawstM Projects/Upper_ches/coupling_upper_ches.in > coupling_upper_ches.out
+#mpirun -np 18 ./coawstG Projects/Veg_test/coupling_veg_test.in > coupling_veg_test.out
+
+( head -350 coupling_upper_ches.out; tail -200 coupling_upper_ches.out; ) | mail -s "COAWSTv3.4 Upper Ches COAWST run complete" "mathew.biddle@gmail.com"
+
+#mail -s "COAWST RUN Complete!" "mathew.biddle@gmail.com" <<EOF
+#COAWST Run is complete
+#See MAC for output.
+#
+#Matt
+#EOF
