@@ -20,3 +20,4 @@ abstract: >-
   and initialization data for the 2011 COAWST
   simulation of event dynamics in the upper
   Chesapeake Bay.
+license: BSD-3-Clause
