@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: >-
+  Final initialization files for the 2011 upper
+  Chesapeake Bay COAWST sediment transport and SAV
+  simulation
+message: 'If you use this software, please cite it as below.'
+type: software
+authors:
+  - given-names: Mathew
+    family-names: Biddle
+    email: mathew.biddle@noaa.gov
+    orcid: 'https://orcid.org/0000-0003-4897-1669'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.3537967
+repository-code: 'https://github.com/MathewBiddle/coawst'
+url: 'https://doi.org/10.1007/s12237-021-00941-2'
+abstract: >-
+  This release contains all the configuration files
+  and initialization data for the 2011 COAWST
+  simulation of event dynamics in the upper
+  Chesapeake Bay.
